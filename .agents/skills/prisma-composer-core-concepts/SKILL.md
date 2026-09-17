@@ -54,7 +54,9 @@ Nodes connect through **ports**: `deps` declares what a node requires,
 
 ```ts
 // module.ts
-import { module } from '@prisma/composer';
+//import { module } from '@prisma/composer';
+
+import { postgres } from "@prisma/composer-prisma-cloud";
 
 export default module('store', ({ provision }) => {
   const catalog = provision(catalogModule);
